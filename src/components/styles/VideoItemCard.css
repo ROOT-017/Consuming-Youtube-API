@@ -1,0 +1,19 @@
+/* .item-card {
+  display: grid;
+  grid-template-columns:1fr 2fr;
+}
+
+.item-name{
+display: flex;
+} */
+
+.video-item {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer;
+}
+ 
+
+.video-item.item img{
+    max-width: 180px;
+} 
