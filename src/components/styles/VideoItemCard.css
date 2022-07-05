@@ -17,3 +17,15 @@ display: flex;
 .video-item.item img{
     max-width: 180px;
 } 
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

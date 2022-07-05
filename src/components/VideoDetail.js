@@ -1,11 +1,12 @@
 import React from "react";
+import loadingImage from "../assets/loading.png";
 
 const VideoDetail = ({ video }) => {
   if (!video) {
     return (
-      <div>
-        <div>
-          <img src="../assets/loading.png" alt="Loading" />
+      <div className="intro-container">
+        <div className="loading image">
+          <img className="ui medium rounded image" src={loadingImage} />
         </div>
         <div>
           Illustration by{" "}
@@ -31,10 +32,9 @@ const VideoDetail = ({ video }) => {
         ></iframe>
       </div>
       <div className="ui segment">
-      <h4 className="item-name ui header">{video.snippet.title}</h4>
-      <p className="item-discription">{video.snippet.description}</p>
+        <h4 className="item-name ui header">{video.snippet.title}</h4>
+        <p className="item-discription">{video.snippet.description}</p>
       </div>
-      
     </div>
   );
 };
